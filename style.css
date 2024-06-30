@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Contrail+One&family=Playwrite+DE+Grund:wght@100..400&family=Ranchers&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: "Contrail One", sans-serif;
+    font-style: normal;
 }
 :root{
     --blue: #01204E;
-    --white: #F6DCAC;
+    --white: F8FAE5;
     --cyan:  #028391;
 }
+
 .navbar-container{
-    background-color: var(--blue);
+    background-color: #43766C;
     padding: 1rem;
 
     gap: 1rem;
@@ -18,9 +23,10 @@
     align-items: center;
 
 }
+
 .navbar-logo{
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
 .nav-bar{
@@ -28,27 +34,71 @@
 
     display: flex;
     gap: 1rem;
-
-
 }
+
 .nav-bar .links{
+    color: var(--white);
     text-decoration: none;
-    color: #F6DCAC;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
+
 .nav-bar .links:hover{
     text-decoration: underline;
 }
-.homepage{
-    background-color: var(--cyan);
+
+.hero-section{
+    background-color: #F8FAE5;
     height: 100vh;
 
+    
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.hero-introduction{
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-section h1{
+    color: var(--white);
+}
+
+.hero-section h3{
+    color: var(--white);
+}
+
+.aboutme-section{
+    background-color: #F8FAE5;
+
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
-.homepage h1{
+.about-me{
     border: 1px solid black;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.picture-container{
+    
+    border: 1 px solid black;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+.picture-container .my-picture{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
